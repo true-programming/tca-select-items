@@ -1,0 +1,33 @@
+{
+    "name": "trueprogramming/tca-select-items",
+    "description": "Adds api for adding TCA items array",
+    "type": "typo3-cms-extension",
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "require": {
+        "typo3/cms-core": "^12.0",
+		"php": ">8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Trueprogramming\\TcaSelectItems\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "tca_select_items"
+        }
+    },
+    "require-dev": {
+        "typo3/coding-standards": "^0.7.1",
+        "phpstan/phpstan": "^1.10",
+        "saschaegerer/phpstan-typo3": "^1.9"
+    },
+    "config": {
+        "allow-plugins": {
+            "typo3/cms-composer-installers": true,
+            "typo3/class-alias-loader": true
+        }
+    }
+}
